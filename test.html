@@ -1,9 +1,23 @@
 <html>
 	<head>
 		<title>하이</title>
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<script src="./js/top_script.js"></script>
 	</head>
 	<body>
-		<h2>안녕 친구</h2>
-		<img src="./iu.jpg">
+		<img src="./img/funin.png">
+		<h2>안녕하세요 퍼닌입니다.</h2>
+		<input type="button" id="btn1" value="상단 script" />
+		<input type="button" id="btn2" value="내부 script" />
+		<input type="button" id="btn3" value="하단 script" />
+
+		<script type="text/javascript">
+			var btn2 = document.getElementById('btn2');
+			btn2.addEventListener('click', function(){
+				alert('내부 스크립트입니다.');
+			})
+		</script>
+
+		<script type="text/javascript" src="./js/bottom_script.js"></script>
 	</body>
 </html>
